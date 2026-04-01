@@ -19,7 +19,7 @@ export default function Navbar() {
           <div className="w-9 h-9 border border-primary flex items-center justify-center rounded-full group-hover:bg-primary transition-all duration-500">
              <span className="text-primary group-hover:text-white font-bold text-lg font-serif">T</span>
           </div>
-          <span className="text-lg font-bold tracking-widest text-primary font-serif uppercase">Tekodeko Koffiehuis</span>
+          <span className="text-lg font-bold tracking-widest text-primary font-serif uppercase">Tore Coffee</span>
         </div>
         
         <div className="hidden md:flex gap-10 text-[10px] font-bold uppercase tracking-[0.2em] text-primary/70">

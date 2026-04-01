@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className="w-10 h-10 border border-text-light/20 flex items-center justify-center rounded-full transition-all group-hover:bg-accent group-hover:text-primary">
                    <span className="font-bold text-xl font-serif">T</span>
                 </div>
-                <span className="text-xl font-bold tracking-[0.2em] text-white font-serif uppercase">Tekodeko</span>
+                <span className="text-xl font-bold tracking-[0.2em] text-white font-serif uppercase">Tore Coffee</span>
              </div>
              <p className="text-sm opacity-50 leading-loose max-w-sm font-light mb-10">
                Mendedikasikan diri untuk melestarikan rasa dan sejarah melalui seduhan kopi yang tulus di kawasan Kota Lama Semarang.
