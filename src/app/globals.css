@@ -1,7 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Inter:wght@100..900&display=swap');
 @import "tailwindcss";
 @config "../../tailwind.config.js";
-
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Inter:wght@100..900&display=swap');
 
 :root {
   --primary: #3D2B1F; /* Richer, deeper coffee brown */

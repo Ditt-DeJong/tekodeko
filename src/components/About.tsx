@@ -37,7 +37,7 @@ export default function About() {
             
             <div className="space-y-8 text-text-muted leading-relaxed font-light">
               <p className="text-xl italic font-serif opacity-80 border-l-2 border-accent pl-8 py-2">
-                "Kami percaya setiap tegukan kopi bercerita tentang sejarah panjang Semarang. Kami hanya perantaranya."
+                &quot;Kami percaya setiap tegukan kopi bercerita tentang sejarah panjang Semarang. Kami hanya perantaranya.&quot;
               </p>
               
               <p>

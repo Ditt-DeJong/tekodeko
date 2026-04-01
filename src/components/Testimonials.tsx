@@ -51,7 +51,7 @@ export default function Testimonials() {
                 ))}
               </div>
               <p className="text-text-muted italic leading-relaxed mb-10 font-serif">
-                "{item.content}"
+                &quot;{item.content}&quot;
               </p>
               <div className="flex items-center gap-4">
                  <div className="w-12 h-12 rounded-full overflow-hidden bg-primary/5 border border-primary/10">

@@ -64,7 +64,7 @@ export default function Hero() {
               {/* Floating Badge */}
               <div className="absolute -bottom-8 -left-8 bg-primary p-8 text-white shadow-2xl hidden md:block">
                 <p className="font-serif italic text-lg leading-snug mb-2">
-                  "A timeless escape in the heart of Semarang."
+                  &quot;A timeless escape in the heart of Semarang.&quot;
                 </p>
                 <div className="w-12 h-px bg-accent mb-4"></div>
                 <div className="text-[10px] uppercase tracking-widest opacity-60">The Journal</div>
