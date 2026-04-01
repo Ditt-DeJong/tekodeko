@@ -61,14 +61,14 @@ export default function Footer() {
                 </div>
                 <div>
                    <p className="text-[9px] opacity-40 uppercase tracking-widest mb-1">Email</p>
-                   <a href="mailto:hello@tekodeko.com" className="text-sm font-medium hover:text-accent transition-all text-white">hello@tekodeko.com</a>
+                   <a href="mailto:hello@teroos.com" className="text-sm font-medium hover:text-accent transition-all text-white">hello@teroos.com</a>
                 </div>
              </div>
           </div>
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[9px] uppercase tracking-[0.3em] opacity-30">
-           <p>&copy; 2024 Tekodeko Koffiehuis. All Rights Reserved.</p>
+           <p>&copy; 2024 Tero. All Rights Reserved.</p>
            <div className="flex gap-10 mt-6 md:mt-0 font-bold">
               <a href="#" className="hover:opacity-100 transition-opacity">Privacy</a>
               <a href="#" className="hover:opacity-100 transition-opacity">Terms</a>

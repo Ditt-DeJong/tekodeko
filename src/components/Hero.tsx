@@ -30,7 +30,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-lg text-text-muted mb-10 max-w-xl leading-relaxed font-light">
-              Nikmati harmoni sempurna antara citarasa kopi otentik dan kemegahan arsitektur kolonial. Tekodeko Koffiehuis menyajikan pengalaman yang tak terlupakan di setiap cangkirnya.
+              Nikmati harmoni sempurna antara citarasa kopi otentik dan kemegahan arsitektur kolonial. Tore Coffee menyajikan pengalaman yang tak terlupakan di setiap cangkirnya.
             </p>
             
             <div className="flex flex-wrap gap-6">
@@ -53,7 +53,7 @@ export default function Hero() {
               <div className="img-reveal aspect-4/5 bg-primary/5">
                 <Image 
                   src="/images/hero-gambar-1.png" 
-                  alt="Tekodeko Heritage Building" 
+                  alt="Tero Heritage Building" 
                   width={800} 
                   height={1000} 
                   className="w-full h-full object-cover"

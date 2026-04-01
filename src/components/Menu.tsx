@@ -23,7 +23,7 @@ const MENU_ITEMS = [
     desc: "Disajikan dalam teko keramik klasik, aroma yang menenangkan."
   },
   {
-    name: "Nasi Campur Tekodeko",
+    name: "Nasi Campur Toreore",
     category: "Main Course",
     price: "45K",
     desc: "Nasi hangat dengan lauk pauk khas rumahan yang menggugah selera."

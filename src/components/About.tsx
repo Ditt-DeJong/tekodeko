@@ -12,7 +12,7 @@ export default function About() {
                <div className="img-reveal aspect-3/4">
                   <Image 
                     src="/images/about-gambar-1.png" 
-                    alt="Interior Tekodeko Vintage" 
+                    alt="Interior Tero Vintage" 
                     width={1000}
                     height={1200}
                     className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0"
@@ -41,7 +41,7 @@ export default function About() {
               </p>
               
               <p>
-                Terletak di sebuah gedung peninggalan era kolonial di Jl. Kepodang, Tekodeko Koffiehuis dirancang dengan hati untuk mempertahankan karakter asli bangunan aslinya.
+                Terletak di sebuah gedung peninggalan era kolonial di Jl. Kepodang, Tero Coffee dirancang dengan hati untuk mempertahankan karakter asli bangunan aslinya.
               </p>
               
               <p>

@@ -15,7 +15,7 @@ export default function Events() {
                  <div className="aspect-[4/3] relative">
                     <Image 
                       src="/images/event-gambar-1.png" 
-                      alt="Private Events at Tekodeko" 
+                      alt="Private Events at Tero" 
                       fill
                       className="object-cover grayscale-[0.3] hover:grayscale-0 transition-all duration-1000 scale-105"
                     />
