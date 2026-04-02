@@ -54,11 +54,13 @@ export default function Testimonials() {
                 &quot;{item.content}&quot;
               </p>
               <div className="flex items-center gap-4">
-                 <div className="w-12 h-12 rounded-full overflow-hidden bg-primary/5 border border-primary/10">
-                    {/* Placeholder for avatar */}
-                    <div className="w-full h-full flex items-center justify-center text-primary font-bold text-xs uppercase">
-                      {item.name.charAt(0)}
-                    </div>
+                 <div className="w-12 h-12 rounded-full overflow-hidden bg-primary/5 border border-primary/10 relative">
+                    <Image 
+                      src={item.avatar} 
+                      alt={item.name} 
+                      fill 
+                      className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    />
                  </div>
                  <div>
                     <h5 className="font-bold text-sm text-primary uppercase tracking-widest">{item.name}</h5>

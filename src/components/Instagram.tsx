@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 
 const INSTA_IMAGES = [
-  "/images/instagram-gambar-1.png",
+  "https://images.unsplash.com/photo-1511210137748-0c67cd328b03?auto=format&fit=crop&q=80&w=800",
   "/images/instagram-gambar-2.png",
   "/images/instagram-gambar-3.png",
   "/images/instagram-gambar-4.png",
