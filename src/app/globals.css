@@ -71,7 +71,7 @@
   }
 
   .glass-nav.scrolled {
-    @apply bg-[rgba(255,252,249,0.85)] backdrop-blur-[20px] border-b border-primary/5 py-4;
+    @apply bg-[rgba(255,252,249,0.85)] backdrop-blur-[20px] border-b border-primary/5 py-6;
   }
 
   .vintage-frame {

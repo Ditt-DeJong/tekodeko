@@ -13,7 +13,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 glass-nav ${isScrolled ? 'scrolled' : 'py-6'}`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 glass-nav ${isScrolled ? 'scrolled' : 'py-8'}`}>
       <div className="container flex justify-between items-center">
         <div className="flex items-center gap-3 group cursor-pointer">
           <div className="w-9 h-9 border border-primary flex items-center justify-center rounded-full group-hover:bg-primary transition-all duration-500">
