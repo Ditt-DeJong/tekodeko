@@ -3,8 +3,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-bg-dark text-text-light py-32 overflow-hidden relative">
-      <div className="container relative z-10">
+    <footer id="contact" className="bg-bg-dark text-text-light py-6 overflow-hidden relative">
+      <div className="container relative z-10 pt-12">
         <div className="grid md:grid-cols-12 gap-16 mb-24">
           <div className="md:col-span-5">
              <div className="flex items-center gap-3 mb-10 group">
@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[9px] uppercase tracking-[0.3em] opacity-30">
+        <div className="pt-4 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[9px] uppercase tracking-[0.3em] opacity-30">
            <p>&copy; 2024 Tero. All Rights Reserved.</p>
            <div className="flex gap-10 mt-6 md:mt-0 font-bold">
               <a href="#" className="hover:opacity-100 transition-opacity">Privacy</a>

@@ -14,7 +14,7 @@ export default function Events() {
               <div className="vintage-frame border-white/10 p-0 overflow-hidden reveal-up active">
                  <div className="aspect-[4/3] relative">
                     <Image 
-                      src="/images/event-gambar-1.png" 
+                      src="/images/layer3.png" 
                       alt="Private Events at Tero" 
                       fill
                       className="object-cover grayscale-[0.3] hover:grayscale-0 transition-all duration-1000 scale-105"

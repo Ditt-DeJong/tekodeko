@@ -11,7 +11,7 @@ export default function About() {
             <div className="vintage-frame p-0 overflow-hidden">
                <div className="img-reveal aspect-3/4">
                   <Image 
-                    src="/images/about-gambar-1.png" 
+                    src="/images/layer2.png" 
                     alt="Interior Tero Vintage" 
                     width={1000}
                     height={1200}

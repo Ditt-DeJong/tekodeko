@@ -5,6 +5,7 @@ import Image from 'next/image';
 const MENU_CATEGORIES = ["Signature", "Traditional", "Main Course", "Light Bites"];
 
 const MENU_ITEMS = [
+  // Signature
   {
     name: "Kopi Gula Asem",
     category: "Signature",
@@ -18,17 +19,107 @@ const MENU_ITEMS = [
     desc: "Kopi murni biji pilihan dari perkebunan terbaik di Jawa Tengah."
   },
   {
+    name: "Kopi Susu Kolonial",
+    category: "Signature",
+    price: "35K",
+    desc: "Espresso pekat berpadu susu segar lokal dengan sedikit kayu manis."
+  },
+  {
+    name: "Cold Brew Aren",
+    category: "Signature",
+    price: "38K",
+    desc: "Cold brew 18 jam dengan gula aren pilihan, segar dan penuh karakter."
+  },
+  {
+    name: "Tekodeko Latte",
+    category: "Signature",
+    price: "34K",
+    desc: "House blend espresso dengan steamed milk dan latte art signature kami."
+  },
+  {
+    name: "Kopi Rempah Heritage",
+    category: "Signature",
+    price: "33K",
+    desc: "Racikan kopi dengan jahe, cengkeh, dan kapulaga ala resep tempo dulu."
+  },
+
+  // Traditional
+  {
     name: "Teh Wangi",
     category: "Traditional",
     price: "28K",
     desc: "Disajikan dalam teko keramik klasik, aroma yang menenangkan."
   },
   {
+    name: "Wedang Uwuh",
+    category: "Traditional",
+    price: "27K",
+    desc: "Minuman herbal tradisional Jawa dengan rempah pilihan yang menghangatkan tubuh."
+  },
+  {
+    name: "Bajigur Kota Lama",
+    category: "Traditional",
+    price: "26K",
+    desc: "Minuman jahe santan dengan gula aren, cocok untuk sore hari."
+  },
+  {
+    name: "Es Dawet Istimewa",
+    category: "Traditional",
+    price: "22K",
+    desc: "Cendol hijau segar dengan kuah santan dan gula merah cair."
+  },
+  {
+    name: "Sekoteng Hangat",
+    category: "Traditional",
+    price: "24K",
+    desc: "Kacang hijau, kacang tanah, dan jahe dalam kuah hangat yang nyaman."
+  },
+  {
+    name: "Teh Tarik Melayu",
+    category: "Traditional",
+    price: "25K",
+    desc: "Teh pekat yang diseduh lalu ditarik hingga berbusa dan creamy."
+  },
+
+  // Main Course
+  {
     name: "Nasi Campur Toreore",
     category: "Main Course",
     price: "45K",
     desc: "Nasi hangat dengan lauk pauk khas rumahan yang menggugah selera."
   },
+  {
+    name: "Nasi Goreng Kolonial",
+    category: "Main Course",
+    price: "42K",
+    desc: "Nasi goreng racikan khusus dengan bumbu rempah era kolonial dan telur ceplok."
+  },
+  {
+    name: "Ayam Bakar Kota Lama",
+    category: "Main Course",
+    price: "55K",
+    desc: "Ayam kampung dibakar dengan bumbu kacang dan kecap manis khas Jawa."
+  },
+  {
+    name: "Soto Semarang Spesial",
+    category: "Main Course",
+    price: "38K",
+    desc: "Kuah bening gurih dengan suwiran ayam, tauge, dan perkedel kentang."
+  },
+  {
+    name: "Mie Kopyok Kepodang",
+    category: "Main Course",
+    price: "35K",
+    desc: "Mie lidi khas Semarang dengan lontong, tauge, dan bawang goreng renyah."
+  },
+  {
+    name: "Pasta Herbal Jawa",
+    category: "Main Course",
+    price: "48K",
+    desc: "Pasta linguine dengan saus tomat segar, basil, dan sentuhan kemiri."
+  },
+
+  // Light Bites
   {
     name: "Singkong Keju Goreng",
     category: "Light Bites",
@@ -40,7 +131,31 @@ const MENU_ITEMS = [
     category: "Light Bites",
     price: "25K",
     desc: "Roti tebal dengan olesan selai srikaya buatan sendiri."
-  }
+  },
+  {
+    name: "Pisang Goreng Crispy",
+    category: "Light Bites",
+    price: "22K",
+    desc: "Pisang kepok pilihan digoreng crispy dengan saus coklat dan keju parut."
+  },
+  {
+    name: "Lumpia Semarang Mini",
+    category: "Light Bites",
+    price: "28K",
+    desc: "Isi rebung dan udang segar dalam kulit lumpia renyah khas Semarang."
+  },
+  {
+    name: "Kue Klepon Heritage",
+    category: "Light Bites",
+    price: "20K",
+    desc: "Bola pandan isi gula merah cair berbalut kelapa parut segar."
+  },
+  {
+    name: "Bruschetta Kota Lama",
+    category: "Light Bites",
+    price: "30K",
+    desc: "Roti sourdough panggang dengan tomat segar, bawang putih, dan minyak zaitun."
+  },
 ];
 
 export default function Menu() {
@@ -106,7 +221,7 @@ export default function Menu() {
                  <div className="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent"></div>
                  <div className="absolute bottom-8 left-8 right-8 text-white">
                     <p className="text-[10px] uppercase tracking-widest font-bold text-accent mb-2">Editor's Pick</p>
-                    <h3 className="text-2xl font-serif">Try our signature manual brew with local heritage beans.</h3>
+                    <h3 className="text-2xl text-amber-100/70 font-serif">Try our signature manual brew with local heritage beans.</h3>
                  </div>
               </div>
            </div>

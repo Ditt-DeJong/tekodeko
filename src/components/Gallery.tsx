@@ -3,10 +3,10 @@ import React from 'react';
 import Image from 'next/image';
 
 const GALLERY_IMAGES = [
-  { src: "/images/gallery-gambar-1.png", alt: "Tore Exterior", span: "md:col-span-2 md:row-span-2" },
-  { src: "/images/gallery-gambar-2.png", alt: "Vintage Interior", span: "" },
-  { src: "/images/gallery-gambar-3.png", alt: "Specialty Coffee", span: "" },
-  { src: "/images/gallery-gambar-4.png", alt: "Cozy Corner", span: "md:col-span-2" },
+  { src: "/images/sudut1.png", alt: "Tore Exterior", span: "md:col-span-2 md:row-span-2" },
+  { src: "/images/sudut2.png", alt: "Vintage Interior", span: "" },
+  { src: "/images/sudut4.png", alt: "Specialty Coffee", span: "" },
+  { src: "/images/sudut3.png", alt: "Cozy Corner", span: "md:col-span-2" },
 ];
 
 export default function Gallery() {

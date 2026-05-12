@@ -52,7 +52,7 @@ export default function Hero() {
             <div className="vintage-frame">
               <div className="img-reveal aspect-4/5 bg-primary/5">
                 <Image 
-                  src="/images/hero-gambar-1.png" 
+                  src="/images/hero.jpg" 
                   alt="Tero Heritage Building" 
                   width={800} 
                   height={1000} 

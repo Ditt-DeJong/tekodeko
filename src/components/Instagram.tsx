@@ -3,12 +3,12 @@ import React from 'react';
 import Image from 'next/image';
 
 const INSTA_IMAGES = [
-  "https://images.unsplash.com/photo-1511210137748-0c67cd328b03?auto=format&fit=crop&q=80&w=800",
-  "/images/instagram-gambar-2.png",
-  "/images/instagram-gambar-3.png",
-  "/images/instagram-gambar-4.png",
-  "/images/instagram-gambar-5.png",
-  "/images/instagram-gambar-6.png",
+  "/images/kopi1.png",
+  "/images/kopi2.png",
+  "/images/kopi3.png",
+  "/images/kopi4.png",
+  "/images/kopi5.png",
+  "/images/kopi6.png",
 ];
 
 export default function Instagram() {
