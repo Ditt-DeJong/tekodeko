@@ -220,7 +220,7 @@ export default function Menu() {
                  />
                  <div className="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent"></div>
                  <div className="absolute bottom-8 left-8 right-8 text-white">
-                    <p className="text-[10px] uppercase tracking-widest font-bold text-accent mb-2">Editor's Pick</p>
+                    <p className="text-[10px] uppercase tracking-widest font-bold text-accent mb-2">Editor&apos;s Pick</p>
                     <h3 className="text-2xl text-amber-100/70 font-serif">Try our signature manual brew with local heritage beans.</h3>
                  </div>
               </div>
