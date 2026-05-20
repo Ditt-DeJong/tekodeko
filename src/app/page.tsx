@@ -8,20 +8,24 @@ import Testimonials from "@/components/Testimonials";
 import Instagram from "@/components/Instagram";
 import Events from "@/components/Events";
 import FloatingCTA from "@/components/FloatingCTA";
+import LoadingScreen from "@/components/LoadingScreen";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
-      <Navbar />
-      <Hero />
-      <About />
-      <Gallery />
-      <Menu />
-      <Events />
-      <Testimonials />
-      <Instagram />
-      <Footer />
-      <FloatingCTA />
-    </main>
+    <>
+      <LoadingScreen />
+      <main className="min-h-screen bg-white">
+        <Navbar />
+        <Hero />
+        <About />
+        <Gallery />
+        <Menu />
+        <Events />
+        <Testimonials />
+        <Instagram />
+        <Footer />
+        <FloatingCTA />
+      </main>
+    </>
   );
 }
