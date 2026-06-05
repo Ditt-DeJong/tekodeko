@@ -1,10 +1,20 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function About() {
   const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.1 });
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
     <section id="about" ref={sectionRef} className="bg-white overflow-hidden py-32">
@@ -16,7 +26,11 @@ export default function About() {
             className="relative group"
             style={{
               opacity: isVisible ? 1 : 0,
-              transform: isVisible ? "translateX(0)" : "translateX(-80px)",
+              transform: isVisible
+                ? "translate(0, 0)"
+                : isMobile
+                ? "translateY(30px)"
+                : "translateX(-80px)",
               transition: "opacity 0.9s ease 0.1s, transform 0.9s cubic-bezier(0.16,1,0.3,1) 0.1s",
             }}
           >
@@ -49,7 +63,11 @@ export default function About() {
             className="flex flex-col"
             style={{
               opacity: isVisible ? 1 : 0,
-              transform: isVisible ? "translateX(0)" : "translateX(80px)",
+              transform: isVisible
+                ? "translate(0, 0)"
+                : isMobile
+                ? "translateY(30px)"
+                : "translateX(80px)",
               transition: "opacity 0.9s ease 0.25s, transform 0.9s cubic-bezier(0.16,1,0.3,1) 0.25s",
             }}
           >
@@ -75,25 +93,24 @@ export default function About() {
             </div>
 
             {/* Stats — muncul satu per satu */}
-            <div className="mt-16 pt-12 border-t border-primary/5 flex items-center gap-10">
+            <div className="mt-16 pt-12 border-t border-primary/5 grid grid-cols-3 gap-4 md:flex md:items-center md:gap-10">
               {[
                 { value: "1920s", label: "Building Era" },
                 { value: "2015", label: "First Pour" },
                 { value: "Kota Lama", label: "Location" },
               ].map((stat, i) => (
-                <React.Fragment key={i}>
-                  {i > 0 && <div className="w-px h-10 bg-primary/10" />}
-                  <div
-                    style={{
-                      opacity: isVisible ? 1 : 0,
-                      transform: isVisible ? "translateY(0)" : "translateY(20px)",
-                      transition: `opacity 0.6s ease ${0.5 + i * 0.15}s, transform 0.6s ease ${0.5 + i * 0.15}s`,
-                    }}
-                  >
-                    <div className="text-2xl font-serif text-primary">{stat.value}</div>
-                    <div className="text-[9px] uppercase tracking-widest opacity-50 mt-1">{stat.label}</div>
-                  </div>
-                </React.Fragment>
+                <div
+                  key={i}
+                  style={{
+                    opacity: isVisible ? 1 : 0,
+                    transform: isVisible ? "translateY(0)" : "translateY(20px)",
+                    transition: `opacity 0.6s ease ${0.5 + i * 0.15}s, transform 0.6s ease ${0.5 + i * 0.15}s`,
+                  }}
+                  className="text-center md:text-left"
+                >
+                  <div className="text-xl md:text-2xl font-serif text-primary">{stat.value}</div>
+                  <div className="text-[9px] uppercase tracking-widest opacity-50 mt-1">{stat.label}</div>
+                </div>
               ))}
             </div>
           </div>

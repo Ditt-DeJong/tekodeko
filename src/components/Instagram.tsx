@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
@@ -18,9 +18,19 @@ const RIPPLE_ORDER = [2, 3, 1, 4, 0, 5];
 export default function Instagram() {
   const { ref: headerRef, isVisible: headerVisible } = useScrollReveal({ threshold: 0.2 });
   const { ref: gridRef, isVisible: gridVisible } = useScrollReveal({ threshold: 0.1 });
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
-    <section id="social" className="bg-white py-32 border-t border-primary/5">
+    <section id="social" className="bg-white py-32 border-t border-primary/5 overflow-hidden">
       <div className="container">
 
         {/* Header */}
@@ -55,7 +65,11 @@ export default function Instagram() {
             className="mt-10 md:mt-0"
             style={{
               opacity: headerVisible ? 1 : 0,
-              transform: headerVisible ? "translateX(0)" : "translateX(40px)",
+              transform: headerVisible
+                ? "translate(0, 0)"
+                : isMobile
+                ? "translateY(20px)"
+                : "translateX(40px)",
               transition: "opacity 0.7s ease 0.3s, transform 0.7s ease 0.3s",
             }}
           >

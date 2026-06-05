@@ -38,9 +38,9 @@ export default function Hero() {
                <a href="#about" className="btn btn-outline">Our Heritage</a>
             </div>
 
-            <div className="mt-16 flex items-center gap-8 opacity-40 grayscale">
+            <div className="mt-16 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 opacity-40 grayscale">
               <div className="text-[10px] uppercase tracking-widest font-bold">Featured On</div>
-              <div className="flex gap-6 items-center">
+              <div className="flex flex-wrap gap-4 sm:gap-6 items-center">
                  <span className="font-serif italic text-sm">Traveler Weekly</span>
                  <span className="text-xs">Coffee Culture</span>
                  <span className="font-serif text-sm">Semarang Heritage</span>

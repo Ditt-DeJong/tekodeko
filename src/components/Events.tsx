@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
@@ -11,6 +11,16 @@ const EVENT_ITEMS = [
 
 export default function Events() {
   const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.1 });
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
     <section
@@ -32,7 +42,11 @@ export default function Events() {
             className="order-2 lg:order-1"
             style={{
               opacity: isVisible ? 1 : 0,
-              transform: isVisible ? "translateX(0) scale(1)" : "translateX(-80px) scale(0.92)",
+              transform: isVisible
+                ? "translate(0, 0) scale(1)"
+                : isMobile
+                ? "translateY(30px) scale(0.95)"
+                : "translateX(-80px) scale(0.92)",
               transition: "opacity 1s ease 0.1s, transform 1s cubic-bezier(0.16,1,0.3,1) 0.1s",
             }}
           >
@@ -54,7 +68,11 @@ export default function Events() {
               className="text-[10px] uppercase tracking-[0.4em] text-accent font-bold font-outfit mb-8"
               style={{
                 opacity: isVisible ? 1 : 0,
-                transform: isVisible ? "translateX(0)" : "translateX(60px)",
+                transform: isVisible
+                  ? "translate(0, 0)"
+                  : isMobile
+                  ? "translateY(20px)"
+                  : "translateX(60px)",
                 transition: "opacity 0.7s ease 0.2s, transform 0.7s cubic-bezier(0.16,1,0.3,1) 0.2s",
               }}
             >
@@ -65,7 +83,11 @@ export default function Events() {
               className="text-4xl md:text-6xl font-serif mb-10 leading-tight text-white italic"
               style={{
                 opacity: isVisible ? 1 : 0,
-                transform: isVisible ? "translateX(0)" : "translateX(60px)",
+                transform: isVisible
+                  ? "translate(0, 0)"
+                  : isMobile
+                  ? "translateY(20px)"
+                  : "translateX(60px)",
                 transition: "opacity 0.7s ease 0.32s, transform 0.7s cubic-bezier(0.16,1,0.3,1) 0.32s",
               }}
             >
@@ -76,7 +98,11 @@ export default function Events() {
               className="text-text-light/60 font-light leading-relaxed mb-12"
               style={{
                 opacity: isVisible ? 1 : 0,
-                transform: isVisible ? "translateX(0)" : "translateX(60px)",
+                transform: isVisible
+                  ? "translate(0, 0)"
+                  : isMobile
+                  ? "translateY(20px)"
+                  : "translateX(60px)",
                 transition: "opacity 0.7s ease 0.44s, transform 0.7s cubic-bezier(0.16,1,0.3,1) 0.44s",
               }}
             >
@@ -91,7 +117,11 @@ export default function Events() {
                   className="flex items-center gap-3"
                   style={{
                     opacity: isVisible ? 1 : 0,
-                    transform: isVisible ? "translateX(0)" : "translateX(80px)",
+                    transform: isVisible
+                      ? "translate(0, 0)"
+                      : isMobile
+                      ? "translateY(15px)"
+                      : "translateX(80px)",
                     transition: `opacity 0.6s ease ${0.55 + i * 0.15}s, transform 0.6s cubic-bezier(0.16,1,0.3,1) ${0.55 + i * 0.15}s`,
                   }}
                 >

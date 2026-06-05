@@ -15,7 +15,7 @@ export default function Gallery() {
   const { ref: gridRef, isVisible: gridVisible } = useScrollReveal({ threshold: 0.1 });
 
   return (
-    <section id="gallery" className="bg-white py-32">
+    <section id="gallery" className="bg-white py-32 overflow-hidden">
       <div className="container">
 
         {/* Header — fade + slide down */}

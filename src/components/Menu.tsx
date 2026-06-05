@@ -58,7 +58,7 @@ export default function Menu() {
   const filteredItems = MENU_ITEMS.filter((item) => item.category === activeTab);
 
   return (
-    <section id="menu" className="bg-bg-vintage relative">
+    <section id="menu" className="bg-bg-vintage relative overflow-hidden">
       <div className="container">
 
         {/* Header — slide down */}
